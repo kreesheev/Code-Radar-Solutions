@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    char name[50];
-    int age;
-    char hobby[50];
+    float radius, area;
+    const float pi = 3.14;
 
-    scanf("%s %d %s", name, &age, hobby);
+    scanf("%f", &radius);
 
-    printf("Name: %s\n", name);
-    printf("Age: %d\n", age);
-    printf("Hobby: %s\n", hobby);
+    area = pi * radius * radius;
+
+    printf("Area: %.2f\n", area);
 
     return 0;
 }
