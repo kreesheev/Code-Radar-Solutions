@@ -1,15 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2;
-
-    scanf("%d %d", &num1, &num2);
-
-    if (num1 > 0 || num2 > 0) {
-        printf("True\n");
-    } else {
-        printf("False\n");
-    }
-
+    int a, b, result;
+    scanf("%d %d", &a, &b);
+    result = a & b;
+    printf("Result of bitwise AND: %d\n", result);
     return 0;
 }
